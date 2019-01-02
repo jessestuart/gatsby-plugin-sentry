@@ -1,11 +1,10 @@
 {
-  "name": "gatsby-plugin-sentry",
+  "name": "@jesses/gatsby-plugin-sentry",
   "description": "Gatsby plugin to add Sentry error tracking to your site.",
   "version": "1.0.0",
-  "author": "Jason Stallings <jason.stallin.gs>",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/octalmage/gatsby-plugin-sentry.git"
+  "author": "Jason Stallings <jason.stallin.gs>, Jesse Stuart <hi@jessestuart.com>",
+  "dependencies": {
+    "@sentry/browser": "latest"
   },
   "keywords": [
     "gatsby",
@@ -14,7 +13,12 @@
   ],
   "license": "MIT",
   "main": "index.js",
-  "dependencies": {
-    "@sentry/browser": "latest"
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jessestuart/gatsby-plugin-sentry.git"
   }
 }
